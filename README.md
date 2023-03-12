@@ -23,8 +23,8 @@ should be held in-person or be written on an e-mail.
 ### Libraries, Citations, and Microframeworks Used
 
 - Pandas for Database Organization
-- Bootstrap for CSS and HTML handling
-- Flask for HTML microframework
+- Bootstrap and CSS for additional HTML handling
+- Flask for Python microframework
 - Sklearn for Decision Tree Model
 
 Work Cited:
