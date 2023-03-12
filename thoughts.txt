@@ -1,3 +1,8 @@
 ai that calculates importance based on the preset tasks and if importance is pass threshold then meeting may be placed, else sends an email instead. 
 need to learn how to create post and then the preset options change after inputting.
 may be overridden if you force choose to set up a meeting or an email.
+
+pitch revision: say that if we were to apply this to a company we would need survey data from after the meeting to help the bot learn 
+if there is a need to host a meeting or just email next time.
+
+training data is required from survey information (user input afterwards)
