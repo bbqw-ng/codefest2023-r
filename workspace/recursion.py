@@ -20,24 +20,26 @@ if __name__ == "__main__":
     from sklearn.preprocessing import LabelEncoder
     enc_Subject = LabelEncoder()
     enc_Type = LabelEncoder()
-    enc_Purpose = LabelEncoder()
+    enc_Estimated_Time = LabelEncoder()
     enc_Occurence = LabelEncoder()
-
-    #debug
-    inputs.head()
 
     inputs['Subject_enc'] = enc_Subject.fit_transform(inputs['Subject'])
     inputs['Type_enc'] = enc_Type.fit_transform(inputs['Type'])
-    inputs['Purpose_enc'] = enc_Subject.fit_transform(inputs['Purpose'])
-    inputs['Occurence_enc'] = enc_Subject.fit_transform(inputs['Occurence'])
-
-    inputs_enc = inputs.drop(['Subject', 'Type', 'Purpose', 'Occurence'], axis='columns')
+    inputs['Estimated_Time_enc'] = enc_Estimated_Time.fit_transform(inputs['Estimated_Time'])
+    inputs['Occurence_enc'] = enc_Occurence.fit_transform(inputs['Occurence'])
 
     #debug
-    inputs_enc
+    print(inputs.head())
 
+    inputs_enc = inputs.drop(['Subject', 'Type', 'Estimated_Time', 'Occurence'], axis='columns')
+
+    #debug
+    print(inputs_enc)
+
+
+    # Prediction model
     from sklearn import tree
-    model = tree.DecisionTreeClassifier()
-    print(model)
+    model = tree.DecisionTreeClassifier(criterion='entropy', random_state=0)
     model.fit(inputs_enc, target)
     model.score(inputs_enc, target)
+    model.predict([[1,2,1,0]])
