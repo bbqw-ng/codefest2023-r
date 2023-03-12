@@ -2,11 +2,13 @@
 
 <!-- this is when u chose team and now have to chose either 4 of the selecctions-->
 {%block content%}
-<select required style = "display: flex; justify-content: center; align-items: center; margin-top: 3rem; margin-left: 9.3rem; height: 2rem;">
-    <option> </option>
-    <option value = "Sprint Retrospective">General Announcements</option>
-    <option value = "Stand-up Meeting">Stand-up Meeting</option>
-    <option value = "Sprint Planning">Sprint Planning</option>
-    <option value = "1-on-1 Meeting">1-on-1 Meeting</option>
-</select>
+<div class="container my-5">
+    <form method="POST" class = "form-post" style = "display:flex; justify-content: space-between; align-items: center; width:100%; margin-top: 8rem;">
+        {{form.subjects(class = "form-control", id = "team")}}
+        {{form.team(class = "form-control", id = "team")}}
+        {{form.times(class = "form-control", id = "team")}}
+        {{form.occurence(class = "form-control", id = "team")}}
+        <input class = "coolbutton" type="submit">
+    </form>
+</div>
 {%endblock%}

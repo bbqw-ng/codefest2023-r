@@ -2,9 +2,13 @@
 
 <!--This is when you chose gen anounements and now u have to choose busiuness product-->
 {%block content%}
-<select required style = "display: flex; justify-content: center; align-items: center; margin-top: 3rem; margin-left: 9.3rem; height: 2rem;">
-    <option> </option>
-    <option value = "Business Updates">Business Updates</option>
-    <option value = "Product Performance">Product Performance</option>
-</select>
+<div class="container my-5">
+    <form method="POST" class = "form-post" style = "display:flex; justify-content: space-between; align-items: center; width:100%; margin-top: 8rem;">
+        {{form.subjects(class = "form-control mr-3", id = "team")}}
+        {{form.gen(class = "form-control", id = "team")}}
+        {{form.times(class = "form-control", id = "team")}}
+        {{form.occurence(class = "form-control", id = "team")}}
+        <input class = "coolbutton" type="submit">
+    </form>
+</div>
 {%endblock%}

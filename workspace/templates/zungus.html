@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="card">
+        <form method="POST" class="form-login">
+            <div class="card-header py-4 px-5 bg-light border-0">
+                <h4 class="mb-0 fw-bold">Login</h4>
+            </div>
+
+            <div class="col-md-8 px-5">
+                <div class="mb-3">
+                    <label for="username" class="form-label">
+                        Username
+                    </label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">
+                        Password
+                    </label>
+                    {{form.sub(class="form-control", id="subject", style="max-width: 450px;")}}
+                </div>
+
+            </div>
+            <div class="card footer text-end py-3 px-5 bg-light border-0">
+                <button type="submit" class="btn btn-primary btn-square" style="max-width: 450px;">Log In</button>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>
+{% endblock %}
