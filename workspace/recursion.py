@@ -8,7 +8,7 @@ import matplotlib.pyplot as mtp
 import pandas as pd
 import numpy as nm
 
-if __name__ == "__main__":
+def decision_tree():
     
     # Import survey data
     data = pd.read_csv('survey_data.csv')
@@ -28,18 +28,23 @@ if __name__ == "__main__":
     inputs['Estimated_Time_enc'] = enc_Estimated_Time.fit_transform(inputs['Estimated_Time'])
     inputs['Occurence_enc'] = enc_Occurence.fit_transform(inputs['Occurence'])
 
-    #debug
-    print(inputs.head())
-
     inputs_enc = inputs.drop(['Subject', 'Type', 'Estimated_Time', 'Occurence'], axis='columns')
 
-    #debug
-    print(inputs_enc)
 
+    print(inputs_enc)
 
     # Prediction model
     from sklearn import tree
     model = tree.DecisionTreeClassifier(criterion='entropy', random_state=0)
     model.fit(inputs_enc, target)
     model.score(inputs_enc, target)
-    model.predict([[1,2,1,0]])
+
+    #Grab last row from database
+    sub = inputs_enc.iloc[-1,0]
+    typ = inputs_enc.iloc[-1,1]
+    times = inputs_enc.iloc[-1,2]
+    occur =  inputs_enc.iloc[-1,3]
+
+    pred = int(model.predict([[sub,typ,times,occur]]))
+
+    return pred
