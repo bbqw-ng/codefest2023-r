@@ -2,13 +2,22 @@
 
 <!--This is when you chose gen anounements and now u have to choose busiuness product-->
 {%block content%}
-<div class="container my-5">
-    <form method="POST" class = "form-post" style = "display:flex; justify-content: space-between; align-items: center; width:100%; margin-top: 8rem;">
-        {{form.subjects(class = "form-control mr-3", id = "team")}}
-        {{form.gen(class = "form-control", id = "team")}}
-        {{form.times(class = "form-control", id = "team")}}
-        {{form.occurrence(class = "form-control", id = "team")}}
+<div class= "insidecontainer">
+    <h5>Team-Based Branch</h5>
+    <form method="POST" class = "formpostings">
+        <div class = "formdiv1">
+            {{form.subjects(class = "form-control", id = "team")}}
+            {{form.gen(class = "form-control", id = "team")}}
+        </div>
+
+        <div class = "formdiv2">
+            {{form.times(class = "form-control", id = "team")}}
+            {{form.occurrence(class = "form-control", id = "team")}}
+        </div>
+
+        <div class = "buttonbox">
         <input class = "coolbutton" type="submit">
+        </div>
     </form>
 </div>
 {%endblock%}

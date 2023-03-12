@@ -31,6 +31,10 @@
 
 }
 
+.second{
+    height: 100%
+}
+
 h4{
     font-size: 2.2rem;
     padding: 2rem;
@@ -59,6 +63,10 @@ select{
 
 .coolbutton{
     padding: .3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
 }
 
 a{
@@ -90,4 +98,39 @@ a{
 
 .button2:hover{
     background-color: rgba(90, 219, 90, 0.767);
+}
+
+h5{
+    display:flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.formpostings{
+    width: 100%
+}
+
+.insidecontainer{
+    width: 100%
+}
+
+.formdiv1{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    width: 30rem;
+
+}
+
+.formdiv2{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10rem 0 0 0;
+    width: 100%;
+}
+
+.buttonbox{
+    margin: 4.5rem 0 0 0;
 }
