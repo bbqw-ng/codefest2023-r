@@ -1,0 +1,2 @@
+ai that calculates importance based on the preset tasks and if importance is pass threshold then meeting may be placed, else sends an email instead. May be overridden if one on one meeting.
+need to learn how to create post and then the preset options change after inputting.
