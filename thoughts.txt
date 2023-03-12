@@ -2,6 +2,10 @@ ai that calculates importance based on the preset tasks and if importance is pas
 need to learn how to create post and then the preset options change after inputting.
 may be overridden if you force choose to set up a meeting or an email.
 
+Post feature:
+-Whenever you select a decision node, the other decision nodes disappear from your options
+
+
 pitch revision: say that if we were to apply this to a company we would need survey data from after the meeting to help the bot learn 
 if there is a need to host a meeting or just email next time.
 
