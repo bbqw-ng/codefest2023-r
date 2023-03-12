@@ -27,5 +27,9 @@ should be held in-person or be written on an e-mail.
 - Flask for HTML microframework
 - Sklearn for Decision Tree Model
 
+Work Cited:
+- javatpoint.com/machine-learning-decision-tree-classification-algorithm
+- Machine Learning Tutorial Python - 9 Decision Tree by codebasics on YouTube
+
 ### Images
 ![yLEa6QAAAABJRU5ErkJggg](https://user-images.githubusercontent.com/110130404/224533710-bdf3785b-ab87-4a7f-81b0-b724c62c2722.png)
