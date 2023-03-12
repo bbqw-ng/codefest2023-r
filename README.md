@@ -12,11 +12,9 @@ We use a decision tree algorithm for a number of reasons:
 
 We wanted to improve upon many of the modern-day scheduling and calendar softwares using artificial intelligence (how cool would that be!).
 This program could be implemented to schedules that deal more with the software development industry. A user can create a "post" on a calendar,
-and they can add "tags" which pertains to the decision nodes on our decision tree model (see below)
-
-### Real-World Use
-
-There are many complaints of workers having many "useless meanings" in the tech and corporate industry throughout the course of their career.
+and they can add "tags" which pertains to the decision nodes on our decision tree model (see below). After each meeting, an e-mail would be sent
+to every participant attached with a survey asking "Could this meeting have been summarized in an e-mail? (Yes/No)". Then, the survey data would
+be accumulated into a .csv alongside the rest of our category data from the scheduling system. 
 
 ### Images
 ![yLEa6QAAAABJRU5ErkJggg](https://user-images.githubusercontent.com/110130404/224533710-bdf3785b-ab87-4a7f-81b0-b724c62c2722.png)
