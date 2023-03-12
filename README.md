@@ -1,4 +1,22 @@
-# COMCAST EFFICIENT MEETINGS CHALLENGE!
+# CODEFEST 2023: COMCAST EFFICIENT MEETINGS CHALLENGE!
 ### Backend Dev: Francis Nguyen // Frontend Dev: Brian Wang
-This is a program designed to calculate if the user should send an email or host a meeting based on presets provided to the user.
-It will contain a website that allows users to interact and choose their presets with a responsive backend that reacts accordingly.
+---
+### Purpose
+This is a machine-learning program that will determine whether a meeting should be hosted in-person or be written in an e-mail instead.
+We use a decision tree algorithm for a number of reasons:
+1.) it's easier to visualize and add/remove from a decision tree model,
+2.) decision nodes would be easier to provide metrics about the meeting (like the agenda, purpose, affiliates, etc.),
+3.) creating a decision tree closely fits into how a software engineer would determine whether or not the meeting had been summarized on an e-mail.
+
+### How it works
+
+We wanted to improve upon many of the modern-day scheduling and calendar softwares using artificial intelligence (how cool would that be!).
+This program could be implemented to schedules that deal more with the software development industry. A user can create a "post" on a calendar,
+and they can add "tags" which pertains to the decision nodes on our decision tree model (see below)
+
+### Real-World Use
+
+There are many complaints of workers having many "useless meanings" in the tech and corporate industry throughout the course of their career.
+
+### Images
+![yLEa6QAAAABJRU5ErkJggg](https://user-images.githubusercontent.com/110130404/224533710-bdf3785b-ab87-4a7f-81b0-b724c62c2722.png)
