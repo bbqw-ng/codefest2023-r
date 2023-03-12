@@ -1,3 +1,6 @@
 ai that calculates importance based on the preset tasks and if importance is pass threshold then meeting may be placed, else sends an email instead. 
 need to learn how to create post and then the preset options change after inputting.
 may be overridden if you force choose to set up a meeting or an email.
+
+Post feature:
+-Whenever you select a decision node, the other decision nodes disappear from your options
