@@ -3,7 +3,7 @@ import pandas as pd
 data = {
         'First Name': ['Brian'],
         'Last Name': ['Wang'],
-        'Email': ['brnwg902@gmail.com']
+        'Email': ['X']
         }
 
 dframe = pd.DataFrame(data)
